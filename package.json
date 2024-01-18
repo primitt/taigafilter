@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/primitt/taigafilter#readme",
   "dependencies": {
+    "anilist": "^0.12.3",
+    "anilist-node": "^1.14.0",
     "axios": "^1.6.5",
     "express": "^4.18.2",
     "xml": "^1.0.1",
