@@ -7,7 +7,7 @@ function build_items(items) {
     builder.push({
       title: item[0],
       link: item[1],
-      guid: item[2],
+      guid: {_attributes: {isPermaLink: "false"}, _text: item[2]},
       pubDate: item[3],
       category: item[4],
     });
@@ -24,10 +24,10 @@ function rehd(items) {
       channel: {
         title: "TaigaFilter v1",
         description: "TaigaFilter v1",
-        link: "taiga.primitt.dev",
+        link: "http://subsplease.org/rss",
         "atom:link": {
           _attributes: {
-            href: "taiga.primitt.dev/rss",
+            href: "http://subsplease.org/rss",
             rel: "self",
             type: "application/rss+xml",
           },
